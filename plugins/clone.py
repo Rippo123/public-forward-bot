@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors.exceptions.bad_request_400 import AccessTokenExpired, AccessTokenInvalid
 
-from ..config import API_ID, API_HASH, log_chat
+from ..config import API_ID, API_HASH
 
 
 @Client.on_message((filters.regex(r'\d[0-9]{8,10}:[0-9A-Za-z_-]{35}')) & filters.private)
