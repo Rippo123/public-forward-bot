@@ -1,4 +1,4 @@
-import os
+import os.path
 import logging
 class Config:                                                                   
     API_ID = int(os.environ.get("API_ID", "13795166"))
